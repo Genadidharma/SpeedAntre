@@ -3,12 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FragmentAdmin.Fragment_HomeAdmin">
+    tools:context=".FragmentAdmin.Fragment_HomeAdmin"
+    android:background="@color/colorLighterGrey">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <GridView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="home admin" />
+        android:layout_height="match_parent">
+
+    </GridView>
 
 </FrameLayout>
