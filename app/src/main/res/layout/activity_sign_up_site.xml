@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Auth.SignUpSiteActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/thirtytwo">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/company"
+                android:textColor="@android:color/black"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/tv_title_sign_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/eight"
+                android:text="@string/sign_up"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edtNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fillable_form"
+                android:drawablePadding="@dimen/eight"
+                android:drawableStart="@drawable/ic_business_light_grey_24dp"
+
+                android:hint="@string/company_name"
+                android:inputType="textCapSentences"
+                android:padding="@dimen/eight"
+                tools:targetApi="lollipop" />
+
+            <EditText
+                android:id="@+id/edtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/eight"
+                android:background="@drawable/fillable_form"
+                android:drawablePadding="@dimen/eight"
+                android:drawableStart="@drawable/ic_mail_light_grey_24dp"
+
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/eight"
+                tools:targetApi="lollipop" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/eight"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <EditText
+                    android:id="@+id/edtPass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/four"
+                    android:layout_weight="1"
+                    android:background="@drawable/fillable_form"
+                    android:drawablePadding="@dimen/eight"
+                    android:drawableStart="@drawable/ic_vpn_key_lighter_grey_24dp"
+
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:padding="@dimen/eight"
+                    tools:targetApi="lollipop" />
+
+                <EditText
+                    android:id="@+id/edtRetypePass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/four"
+                    android:layout_weight="1"
+                    android:background="@drawable/fillable_form"
+                    android:drawablePadding="@dimen/eight"
+                    android:drawableStart="@drawable/ic_vpn_key_lighter_grey_24dp"
+
+                    android:hint="@string/retype_password"
+                    android:inputType="textPassword"
+                    android:padding="@dimen/eight"
+                    tools:targetApi="lollipop" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/eight"
+                android:background="@drawable/fillable_form"
+                android:drawablePadding="@dimen/eight"
+                android:drawableStart="@drawable/ic_place_light_grey_24dp"
+
+                android:hint="@string/adress"
+                android:inputType="text"
+                android:padding="@dimen/eight"
+                tools:targetApi="lollipop" />
+
+            <EditText
+                android:id="@+id/edtJenisSite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/eight"
+                android:background="@drawable/fillable_form"
+                android:drawablePadding="@dimen/eight"
+                android:drawableStart="@drawable/ic_people_light_grey_24dp"
+
+                android:hint="@string/type"
+                android:inputType="text"
+                android:padding="@dimen/eight"
+                tools:targetApi="lollipop" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/eight"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <EditText
+                    android:id="@+id/edtHariBuka"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/four"
+                    android:layout_weight="1"
+                    android:background="@drawable/fillable_form"
+                    android:drawablePadding="@dimen/eight"
+                    android:drawableStart="@drawable/ic_date_range_light_grey_24dp"
+
+                    android:hint="@string/open"
+                    android:inputType="textPassword"
+                    android:padding="@dimen/eight"
+                    tools:targetApi="lollipop" />
+
+                <EditText
+                    android:id="@+id/edtHariTutup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/four"
+                    android:layout_weight="1"
+                    android:background="@drawable/fillable_form"
+                    android:drawablePadding="@dimen/eight"
+                    android:drawableStart="@drawable/ic_date_range_light_grey_24dp"
+
+                    android:hint="@string/close"
+                    android:inputType="textPassword"
+                    android:padding="@dimen/eight"
+                    tools:targetApi="lollipop" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/eight"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <EditText
+                    android:id="@+id/edtJamBuka"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/four"
+                    android:layout_weight="1"
+                    android:background="@drawable/fillable_form"
+                    android:drawablePadding="@dimen/eight"
+                    android:drawableStart="@drawable/ic_access_time_light_grey_24dp"
+
+                    android:hint="@string/open"
+                    android:inputType="textPassword"
+                    android:padding="@dimen/eight"
+                    tools:targetApi="lollipop" />
+
+                <EditText
+                    android:id="@+id/edtJamTutup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/four"
+                    android:layout_weight="1"
+                    android:background="@drawable/fillable_form"
+                    android:drawablePadding="@dimen/eight"
+                    android:drawableStart="@drawable/ic_access_time_light_grey_24dp"
+
+                    android:hint="@string/close"
+                    android:inputType="textPassword"
+                    android:padding="@dimen/eight"
+                    tools:targetApi="lollipop" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edtLat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Lat"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/edtLng"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Lng"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/eight"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/tv_pick_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/four"
+                    android:layout_weight="1"
+                    android:background="@drawable/fillable_form"
+                    android:padding="14dp"
+                    android:text="@string/company_s_location"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/btnPickLocation"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/four"
+                    android:layout_weight="2"
+                    android:background="@drawable/fillable_form"
+                    android:padding="@dimen/sixteen"
+                    android:text="@string/pick_company_s_location"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorAccent" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/sixteen"
+                android:background="@drawable/filled_button_accent"
+                android:padding="@dimen/sixteen"
+                android:text="@string/sign_up"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_here"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/here"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" " />
+
+            <TextView
+                android:id="@+id/tv_signIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/to_sign_in"
+                android:textColor="@android:color/black"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

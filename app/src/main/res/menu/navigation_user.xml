@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home_user"
+        android:icon="@drawable/ic_place_dark_grey_36dp"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_book_user"
+        android:icon="@drawable/ic_history_darker_grey_36dp"
+        android:title="@string/title_booking" />
+
+    <item
+        android:id="@+id/navigation_profile_user"
+        android:icon="@drawable/ic_person_dark_grey_36dp"
+        android:title="@string/title_profile" />
+
+</menu>

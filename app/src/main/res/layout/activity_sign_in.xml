@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLighterGrey"
+    android:orientation="vertical"
+    tools:context=".Auth.SignInActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/thirtytwo">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/signin"
+            android:textSize="32sp"
+            android:textColor="@android:color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/stroke_grey_fillable_form"
+                android:drawablePadding="@dimen/eight"
+                android:drawableStart="@drawable/ic_person_lighter_grey_24dp"
+                
+                android:hint="@string/email"
+                android:padding="@dimen/eight"
+                tools:targetApi="lollipop"
+                android:inputType="textEmailAddress"/>
+
+            <EditText
+                android:id="@+id/edtPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/eight"
+                android:background="@drawable/stroke_grey_fillable_form"
+                android:drawablePadding="@dimen/eight"
+                android:drawableStart="@drawable/ic_vpn_key_lighter_grey_24dp"
+                
+                android:hint="@string/password"
+                android:padding="@dimen/eight"
+                tools:targetApi="lollipop"
+                android:inputType="textPassword"/>
+
+            <EditText
+                android:id="@+id/edtJenis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Jenis"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnSignIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="@dimen/sixteen"
+                android:background="@drawable/filled_button_accent"
+                android:text="@string/signin"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_alignParentBottom="true">
+            <TextView
+                android:id="@+id/tv_here"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/here"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "/>
+            <TextView
+                android:id="@+id/tv_signUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/to_sign_up"
+                android:textColor="@android:color/black"
+                android:textStyle="normal"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

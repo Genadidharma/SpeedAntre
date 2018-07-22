@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">SpeedAntre</string>
+    <string name="title_home">Home</string>
+    <string name="title_booking">Book</string>
+    <string name="title_profile">Profile</string>
+
+    <string name="google_api_key">AIzaSyAeSmGA4A2uT2MUZo8c7u3caugVtuilt6E</string>
+    <string name="empty_string_validate">Form should not be empty</string>
+
+    <string name="allow_string">Allow</string>
+    <string name="reject_string">Reject</string>
+    <string name="gps_permission_string">Allow <b>GPS</b> to get your location ?</string>
+    <string name="signin">Sign In</string>
+    <string name="signupuser">SignUpUser</string>
+    <string name="signupadmin">SignUpAdmin</string>
+    <string name="create_your_account">Create Your Account</string>
+    <string name="introduction">Introduction</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="here">Here</string>
+    <string name="to_sign_up"> to Sign Up</string>
+    <string name="helvetica">heleveticaneue_bold.ttf</string>
+    <string name="company_name">Company Name</string>
+    <string name="retype_password">Retype</string>
+    <string name="company">Company</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="type">Type</string>
+    <string name="adress">Adress</string>
+    <string name="pick_company_s_location">Pick</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="to_sign_in">To Sign In</string>
+    <string name="picked">Repick</string>
+    <string name="company_s_location">Company\'s Location</string>
+    <string name="name">Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="user">User</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="save">Save</string>
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Auth.HomeActivity"
+    android:fitsSystemWindows="true">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/homescreen_bg"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:padding="@dimen/sixteen">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/app_typed_logo"/>
+
+        <Button
+            android:id="@+id/btnCreateAcc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/homescreen_button_white"
+            android:text="@string/create_your_account"
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="@dimen/thirtytwo"/>
+
+        <Button
+            android:id="@+id/btnsignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/homescreen_button_accent"
+            android:text="@string/signin"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="@dimen/sixteen"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:text="@string/introduction"
+            android:layout_marginTop="@dimen/twentyfour"/>
+
+        <Button
+            android:id="@+id/btnsignUpUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/signupuser"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btnSignUpAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/signupadmin"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
